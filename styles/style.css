@@ -108,6 +108,10 @@ aside .nav_lenker li a:hover {
 aside #lukk_sidemeny {
   opacity: 0;
 }
+aside .knapp {
+  display: block;
+  margin: 0px auto;
+}
 
 .utvidet {
   right: 0px;
