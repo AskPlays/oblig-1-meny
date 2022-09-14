@@ -30,21 +30,84 @@ h1, h2, li, a {
 
 header {
   width: 100%;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
   color: #f1f1f1;
   display: flex;
   font-family: "Circular pro book", sans-serif;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
+  padding: 30px 20px;
   position: sticky;
   top: 0px;
   transition: all 0.2s ease;
 }
+@media screen and (max-width: 799.5px) {
+  header {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+}
+header .nav_lenker li {
+  display: inline-block;
+  padding: 0 20px;
+}
+header .nav_lenker li a {
+  transition: all 0.2s ease 0s;
+}
+header .nav_lenker li a:hover {
+  color: inherit;
+  opacity: 0.7;
+}
+@media screen and (max-width: 799.5px) {
+  header .nav_lenker {
+    display: none;
+  }
+}
 
 .sticky {
-  padding: 0px 10%;
+  padding: 0px 0px;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 799.5px) {
+  .sticky {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+}
+
+aside {
+  width: 50%;
+  transition: all 0.2s ease;
+  position: fixed;
+  right: -50%;
+  top: 0px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  color: #000;
+  align-items: end;
+}
+aside .nav_lenker {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+aside .nav_lenker li {
+  display: block;
+  padding: 20px;
+}
+aside .nav_lenker li a {
+  transition: all 0.2s ease 0s;
+  color: #000;
+}
+aside .nav_lenker li a:hover {
+  color: #000;
+  opacity: 0.7;
+}
+
+.utvidet {
+  right: 0px;
 }
 
 .hoved {
@@ -63,16 +126,30 @@ header {
   color: inherit;
 }
 
-.nav_lenker li {
-  display: inline-block;
-  padding: 0 20px;
+#hamburger_knapp {
+  padding: 0px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  filter: invert(100%);
 }
-.nav_lenker li a {
-  transition: all 0.2s ease 0s;
+@media screen and (min-width: 800px) {
+  #hamburger_knapp {
+    display: none;
+  }
 }
-.nav_lenker li a:hover {
-  color: inherit;
-  opacity: 0.7;
+
+#lukk_sidemeny {
+  margin: 12.335px 20px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 799.5px) {
+  .knapp {
+    display: none;
+  }
 }
 
 button {
