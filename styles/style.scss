@@ -104,10 +104,16 @@ aside {
             }
         }
     }
+    #lukk_sidemeny {
+        opacity: 0;
+    }
 }
 
 .utvidet {
     right: 0px;
+    #lukk_sidemeny {
+        opacity: 1;
+    }
 }
 
 .hoved {
@@ -138,12 +144,15 @@ aside {
 }
 
 #lukk_sidemeny {
-    margin: calc( (72.67px - 48px) / 2 ) 20px;
+    // margin: calc( (72.67px - 48px) / 2 ) 20px;
+    top: calc( (72.67px - 48px) / 2 );
+    right:  20px;
+    position: fixed;
     width: 48px;
     height: 48px;
-    // float: right;
     cursor: pointer;
     // filter: invert(100%);
+    transition: all 0.2s ease 0s;
 }
 
 .knapp {

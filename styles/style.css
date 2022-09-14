@@ -105,9 +105,15 @@ aside .nav_lenker li a:hover {
   color: #000;
   opacity: 0.7;
 }
+aside #lukk_sidemeny {
+  opacity: 0;
+}
 
 .utvidet {
   right: 0px;
+}
+.utvidet #lukk_sidemeny {
+  opacity: 1;
 }
 
 .hoved {
@@ -140,10 +146,13 @@ aside .nav_lenker li a:hover {
 }
 
 #lukk_sidemeny {
-  margin: 12.335px 20px;
+  top: 12.335px;
+  right: 20px;
+  position: fixed;
   width: 48px;
   height: 48px;
   cursor: pointer;
+  transition: all 0.2s ease 0s;
 }
 
 @media screen and (max-width: 799.5px) {
