@@ -16,6 +16,16 @@ h1, h2, li, a {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
+    padding: 1rem 0;
+}
+
+.kategori_tittel {
+    color: #f1f1f1;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: "Ms Madi", cursive;
+    text-decoration: none;
+    padding: 1rem 0;
 }
 
 header {
@@ -87,7 +97,7 @@ button {
     text-align: center;
 }
 
-.meny_retter {
+.lunsj_retter {
     display: flex;
     flex-direction: column;
     li {
@@ -96,15 +106,31 @@ button {
         margin: 10px 0px;
         border-radius: 10px;
         background-color: rgba(90,113,146, 0.2);
-        a {
-            color: inherit;
-            font-size: 1.5rem;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.2s ease 0s;
-            &:hover {
-                opacity: 0.7;
-            }
-        }
+        line-height: 2rem;
+    }
+}
+
+.middag_retter {
+    display: flex;
+    flex-direction: column;
+    li {
+        list-style: none;
+        padding: 20px;
+        margin: 10px 0px;
+        border-radius: 10px;
+        background-color: rgba(90,113,146, 0.2);
+        line-height: 2rem;
+    }
+}
+.dessert_retter {
+    display: flex;
+    flex-direction: column;
+    li {
+        list-style: none;
+        padding: 20px;
+        margin: 10px 0px;
+        border-radius: 10px;
+        background-color: rgba(90,113,146, 0.2);
+        line-height: 2rem;
     }
 }
