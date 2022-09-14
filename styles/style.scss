@@ -6,6 +6,8 @@
 
 html, body {
     background-color: #000;
+    color: #f1f1f1;
+    font-family: "Circular pro book", sans-serif;
 }
 
 h1, h2, li, a {
@@ -23,6 +25,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+}
+
+.hoved {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 20px;
 }
 
 .logo {
@@ -67,7 +76,6 @@ button {
     font-size: 3rem;
     font-weight: 700;
     font-family: "calibri";
-    // margin: 0 0 20px 20px;
     width: 100%;
     text-align: center;
 }
@@ -78,9 +86,9 @@ button {
     li {
         list-style: none;
         padding: 20px;
-        margin: 10px;
+        margin: 10px 0px;
         border-radius: 10px;
-        background-color: rgba(44,113,146, 0.1);
+        background-color: rgba(90,113,146, 0.2);
         a {
             color: inherit;
             font-size: 1.5rem;
