@@ -8,6 +8,7 @@ html, body {
     background-color: #000;
     color: #f1f1f1;
     font-family: "Circular pro book", sans-serif;
+    height: 3000px;
 }
 
 h1, h2, li, a {
@@ -25,6 +26,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .hoved {
