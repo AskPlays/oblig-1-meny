@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
     background-color: #000;
 }
 
@@ -57,5 +60,36 @@ button {
     transition: all 0.3s ease 0s;
     &:hover {
         background-color: rgba(44, 113, 246, 0.7);
+    }
+}
+
+.tittel {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "calibri";
+    // margin: 0 0 20px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.meny_retter {
+    display: flex;
+    flex-direction: column;
+    li {
+        list-style: none;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        background-color: rgba(44,113,146, 0.1);
+        a {
+            color: inherit;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s ease 0s;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
     }
 }
