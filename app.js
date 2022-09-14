@@ -9,7 +9,7 @@ var sticky = header.offsetTop;
 
 // Legger til klassen sticky til headeren når man scroller
 function myFunction() {
-  if (window.pageYOffset > sticky) {
+  if (window.pageYOffset > 0) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
