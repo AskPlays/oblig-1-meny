@@ -117,11 +117,10 @@ header .nav_lenker li a:hover {
     display: none;
   }
 }
-
-.utvidet {
+#sidemeny.utvidet {
   right: 0px;
 }
-.utvidet #lukk_sidemeny {
+#sidemeny.utvidet #lukk_sidemeny {
   opacity: 1;
 }
 
@@ -130,6 +129,8 @@ header .nav_lenker li a:hover {
   flex-direction: column;
   width: 100%;
   padding: 0px 20px;
+  max-width: 1000px;
+  margin: 0px auto;
 }
 
 .logo {

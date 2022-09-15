@@ -114,12 +114,11 @@ header {
     @media screen and (min-width: $medium2) {
         display: none;
     }
-}
-
-.utvidet {
-    right: 0px;
-    #lukk_sidemeny {
-        opacity: 1;
+    &.utvidet {
+        right: 0px;
+        #lukk_sidemeny {
+            opacity: 1;
+        }
     }
 }
 
@@ -128,6 +127,8 @@ header {
     flex-direction: column;
     width: 100%;
     padding: 0px 20px;
+    max-width: 1000px;
+    margin: 0px auto;
 }
 
 .logo {
