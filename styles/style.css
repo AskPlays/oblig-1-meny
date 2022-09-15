@@ -197,41 +197,40 @@ button:hover {
   text-align: center;
 }
 
-.lunsj_retter {
+.retter {
   display: flex;
   flex-direction: column;
 }
-.lunsj_retter li {
+.retter li {
   list-style: none;
   padding: 20px;
   margin: 10px 0px;
   border-radius: 10px;
   background-color: rgba(90, 113, 146, 0.2);
   line-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.retter li img {
+  max-height: 200px;
+}
+@media screen and (max-width: 600px) {
+  .retter li {
+    flex-direction: column;
+  }
+  .retter li img {
+    max-height: unset;
+  }
 }
 
-.middag_retter {
+.lunsj {
   display: flex;
-  flex-direction: column;
-}
-.middag_retter li {
-  list-style: none;
-  padding: 20px;
-  margin: 10px 0px;
-  border-radius: 10px;
-  background-color: rgba(90, 113, 146, 0.2);
-  line-height: 2rem;
 }
 
-.dessert_retter {
+.middag {
   display: flex;
-  flex-direction: column;
 }
-.dessert_retter li {
-  list-style: none;
-  padding: 20px;
-  margin: 10px 0px;
-  border-radius: 10px;
-  background-color: rgba(90, 113, 146, 0.2);
-  line-height: 2rem;
+
+.dessert {
+  display: flex;
 }
