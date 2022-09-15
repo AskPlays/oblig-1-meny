@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet">
-  <title>Kafe/resturant Meny</title>
+  <title>Verdens beste mat Meny</title>
 </head>
 <body>
   <header class="header" id="header">
@@ -20,7 +20,7 @@
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
     <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
   </header>
-  <aside id="sidemeny">
+  <div id="sidemeny">
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
     <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
     <ul class="nav_lenker">
@@ -29,7 +29,7 @@
       <li><a href="#">Om oss</a></li>
     </ul>
     <a class="knapp" href="#"><button>Reserver bord</button></a>
-  </aside>
+  </div>
   <div class="hoved">
     <h2 class="tittel">MENY</h2>
     <h3 class="kategori_tittel">Lunsj</h3>
@@ -98,6 +98,25 @@
       </li>
     </ul>
   </div>
+  <footer class="footer">
+    <div class="kontakt">
+      <h3>Kontakt oss</h3>
+      <p>Telefon: 123 45 678</p>
+      <p>E-post: <a href="mailto:verdensbestemeny@example.com">verdensbestemeny@example.com"</a></p>
+      <p>Adresse: Gata 1, 1234 Sted</p>
+    </div>
+    <div class="apningstider">
+      <h3>Åpningstider</h3>
+      <p>Mandag - fredag: 10:00 - 22:00</p>
+      <p>Lørdag: 12:00 - 22:00</p>
+      <p>Søndag: 12:00 - 20:00</p>
+    </div>
+    <div class="sosiale_medier">
+      <h3>Følg oss</h3>
+      <a href="https://www.facebook.com/"><img src="./img/facebook.png" alt="facebook logo"></a>
+      <a href="https://www.instagram.com/"><img src="./img/instagram.png" alt="instagram logo"></a>
+    </div>
+  </footer>
   <script src="app.js"></script>
 </body>
 </html>
