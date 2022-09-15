@@ -45,7 +45,6 @@ header {
     top: 0px;
     transition: all 0.2s ease;
     @media screen and (max-width: $medium) {
-        justify-content: space-between;
         padding: 10px 20px;
     }
     .nav_lenker {
@@ -75,7 +74,7 @@ header {
     }
 }
 
-.sidemeny {
+#sidemeny {
     width: 50%;
     transition: all 0.2s ease;
     position: fixed;
@@ -228,4 +227,50 @@ button {
 
 .dessert {
     display: flex;
+}
+
+// åpningstider class
+.åpningstider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 20px;
+    .dag {
+        list-style: none;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: rgba(90,113,146, 0.2);
+        line-height: 2rem;
+        display: flex;
+        p {
+            border-left: 1px solid white;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+    }
+}
+
+// footer class
+footer {
+    width: 100%;
+    background-color: #0009;
+    color: #f1f1f1;
+    display: flex;
+    font-family: "Circular pro book", sans-serif;
+    justify-content: space-evenly;
+    // align-items: center;
+    padding: 20px 20px;
+    position: sticky;
+    top: 0px;
+    transition: all 0.2s ease;
+    @media screen and (max-width: $medium) {
+        justify-content: space-around;
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+    div {
+        display: inline-block;
+        padding: 10px 20px;
+    }
 }

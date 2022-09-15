@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -43,7 +44,6 @@ header {
 }
 @media screen and (max-width: 799.5px) {
   header {
-    justify-content: space-between;
     padding: 10px 20px;
   }
 }
@@ -75,7 +75,7 @@ header .nav_lenker li a:hover {
   }
 }
 
-aside {
+#sidemeny {
   width: 50%;
   transition: all 0.2s ease;
   position: fixed;
@@ -88,32 +88,32 @@ aside {
   color: #000;
   align-items: end;
 }
-aside .nav_lenker {
+#sidemeny .nav_lenker {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-aside .nav_lenker li {
+#sidemeny .nav_lenker li {
   display: block;
   padding: 20px;
 }
-aside .nav_lenker li a {
+#sidemeny .nav_lenker li a {
   transition: all 0.2s ease 0s;
   color: #000;
 }
-aside .nav_lenker li a:hover {
+#sidemeny .nav_lenker li a:hover {
   color: #000;
   opacity: 0.7;
 }
-aside #lukk_sidemeny {
+#sidemeny #lukk_sidemeny {
   opacity: 0;
 }
-aside .knapp {
+#sidemeny .knapp {
   display: block;
   margin: 0px auto;
 }
 @media screen and (min-width: 800px) {
-  aside {
+  #sidemeny {
     display: none;
   }
 }
@@ -233,4 +233,49 @@ button:hover {
 
 .dessert {
   display: flex;
+}
+
+.åpningstider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
+  gap: 20px;
+}
+.åpningstider .dag {
+  list-style: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(90, 113, 146, 0.2);
+  line-height: 2rem;
+  display: flex;
+}
+.åpningstider .dag p {
+  border-left: 1px solid white;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
+  display: flex;
+  font-family: "Circular pro book", sans-serif;
+  justify-content: space-evenly;
+  padding: 20px 20px;
+  position: sticky;
+  top: 0px;
+  transition: all 0.2s ease;
+}
+@media screen and (max-width: 799.5px) {
+  footer {
+    justify-content: space-around;
+    padding: 20px 20px;
+    flex-direction: column;
+  }
+}
+footer div {
+  display: inline-block;
+  padding: 10px 20px;
 }
