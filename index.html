@@ -11,13 +11,13 @@
 <body>
   <header class="header" id="header">
     <span class="logo">Verdens beste mat</span>
-  <nav>
-    <ul class="nav_lenker">
-      <li><a href="#">Meny</a></li>
-      <li><a href="#åpningstider">Åpningstider</a></li>
-      <li><a href="#om_oss">Om oss</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul class="nav_lenker">
+        <li><a href="#">Meny</a></li>
+        <li><a href="#åpningstider">Åpningstider</a></li>
+        <li><a href="#om_oss">Om oss</a></li>
+      </ul>
+    </nav>
     <a class="knapp" href="#"><button>Reserver bord</button></a>
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
     <img onclick="sidemeny.classList.toggle('utvidet');" id="hamburger_knapp" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
@@ -25,15 +25,17 @@
   <div id="sidemeny">
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
     <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
-    <ul class="nav_lenker">
-      <li><a href="#">Meny</a></li>
-      <li><a href="#åpningstider">Åpningstider</a></li>
-      <li><a href="#om_oss">Om oss</a></li>
-    </ul>
+    <nav>
+      <ul class="nav_lenker">
+        <li><a href="#">Meny</a></li>
+        <li><a href="#åpningstider">Åpningstider</a></li>
+        <li><a href="#om_oss">Om oss</a></li>
+      </ul>
+    </nav>
     <a class="knapp" href="#"><button>Reserver bord</button></a>
   </div>
   <div class="hoved">
-    <!--start side bilde?-->
+    <!--forside bilde?-->
     <h2 class="tittel" id="meny">MENY</h2>
     <h3 class="kategori_tittel">Lunsj</h3>
     <ul class="lunsj retter">
@@ -155,6 +157,8 @@
   </div>
   <!--lag en footer-->
   <footer class="footer">
+    <!--kontakt oss-->
+    <!--følg oss/sosiale medier-->
   </footer>
   <script src="app.js"></script>
 </body>

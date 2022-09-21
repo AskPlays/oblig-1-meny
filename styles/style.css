@@ -88,20 +88,23 @@ header .nav_lenker li a:hover {
   color: #000;
   align-items: end;
 }
-#sidemeny .nav_lenker {
+#sidemeny nav {
+  width: 100%;
+}
+#sidemeny nav .nav_lenker {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-#sidemeny .nav_lenker li {
+#sidemeny nav .nav_lenker li {
   display: block;
   padding: 20px;
 }
-#sidemeny .nav_lenker li a {
+#sidemeny nav .nav_lenker li a {
   transition: all 0.2s ease 0s;
   color: #000;
 }
-#sidemeny .nav_lenker li a:hover {
+#sidemeny nav .nav_lenker li a:hover {
   color: #000;
   opacity: 0.7;
 }

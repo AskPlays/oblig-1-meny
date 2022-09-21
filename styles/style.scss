@@ -87,19 +87,22 @@ header {
     background-color: #f1f1f1;
     color: #000;
     align-items: end;
-    .nav_lenker {
-        display: flex;
-        flex-direction: column;
+    nav {
         width: 100%;
-        li {
-            display: block;
-            padding: 20px;
-            a {
-                transition: all 0.2s ease 0s;
-                color: #000;
-                &:hover{
+        .nav_lenker {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            li {
+                display: block;
+                padding: 20px;
+                a {
+                    transition: all 0.2s ease 0s;
                     color: #000;
-                    opacity: 0.7;
+                    &:hover{
+                        color: #000;
+                        opacity: 0.7;
+                    }
                 }
             }
         }
