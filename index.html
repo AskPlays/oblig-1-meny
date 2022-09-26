@@ -12,12 +12,12 @@
 <body>
   <header class="header" id="header">
     <span class="logo">Verdens beste mat</span>
-    <nav>
-      <ul class="nav_lenker">
-        <li><a href="#">Meny</a></li>
-        <li><a href="#åpningstider">Åpningstider</a></li>
-        <li><a href="#om_oss">Om oss</a></li>
-      </ul>
+  <nav>
+    <ul class="nav_lenker">
+      <li><a href="#">Meny</a></li>
+      <li><a href="#åpningstider">Åpningstider</a></li>
+      <li><a href="#om_oss">Om oss</a></li>
+    </ul>
     </nav>
     <a class="knapp" href="#"><button>Reserver bord</button></a>
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
@@ -27,11 +27,11 @@
     <!-- bilde kilde: https://www.iconfinder.com/icons/134216/menu_lines_hamburger_icon -->
     <img onclick="sidemeny.classList.toggle('utvidet');" id="lukk_sidemeny" src="./img/hamburgerKnapp.png" width="48" height="48" alt="hamburger meny">
     <nav>
-      <ul class="nav_lenker">
-        <li><a href="#">Meny</a></li>
-        <li><a href="#åpningstider">Åpningstider</a></li>
-        <li><a href="#om_oss">Om oss</a></li>
-      </ul>
+    <ul class="nav_lenker">
+      <li><a href="#">Meny</a></li>
+      <li><a href="#åpningstider">Åpningstider</a></li>
+      <li><a href="#om_oss">Om oss</a></li>
+    </ul>
     </nav>
     <a class="knapp" href="#"><button>Reserver bord</button></a>
   </div>
@@ -105,22 +105,30 @@
     </ul>
     <h3 class="kategori_tittel">Drikke</h3>
     <ul class="drikke retter">
-      <li>
+      <div id="container">
+        <li>
         <div>
-          <h3>Mineralvann</h3>
-           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           </p>
-        </div>
-      </li>
-      <li>
+             <h3>Mineralvann</h3>
+              <ul>
+                <li>Imsdal 0,5L</li>
+                <li>Cola</li>
+                <li>Cola Zero</li>
+                <li>Fanta</li>
+                <li>Sprite</li>
+                <li>Eplemost</li>
+                <li>Juice (Eple/Appelsin)</li>
+              </ul>
+           </div>
+         </li>
+         <li>
         <div>
-          <h3>Alkohol</h3>
-           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           </p>
-        </div>
-      </li>
+            <h3>Alkohol</h3>
+             <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             </p>
+          </div>
+        </li>
+      </div>
     <!--åpningstider-->
     <h2 class="tittel" id="åpningstider">ÅPNINGSTIDER</h2>
     <div class="åpningstider">
@@ -155,7 +163,7 @@
     </div>
     <!--lag om oss seksjon-->
     <h2 class="tittel" id="om_oss">OM OSS</h2>
-  </div>
+      </div>
   <!--lag en footer-->
   <footer class="footer">
     <!--kontakt oss-->
