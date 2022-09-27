@@ -239,14 +239,12 @@ button:hover {
   display: flex;
 }
 
-#container{
+.drikke_liste {
   display: flex;
-  height: 100%;
-  width: 100%;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 8px;
 }
-
 
 .åpningstider {
   display: flex;

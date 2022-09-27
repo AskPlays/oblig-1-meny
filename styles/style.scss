@@ -233,6 +233,13 @@ button {
     display: flex;
 }
 
+.drikke_liste {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
 // åpningstider class
 .åpningstider {
     display: flex;
