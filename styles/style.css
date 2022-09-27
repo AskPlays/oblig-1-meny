@@ -243,7 +243,10 @@ button:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
+}
+.drikke_liste li {
+  padding: 8px 10px;
 }
 
 .åpningstider {
