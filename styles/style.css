@@ -131,7 +131,7 @@ header .nav_lenker li a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0px max(20px, (100% - 1000px) / 2);
+  padding: 0px max(20px, (100% - 960px) / 2);
   background-color: #000;
 }
 
