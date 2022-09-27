@@ -6,7 +6,6 @@
 }
 
 html, body {
-  background-color: #000;
   color: #f1f1f1;
   font-family: "Circular pro book", sans-serif;
   height: 3000px;
@@ -72,6 +71,7 @@ header .nav_lenker li a:hover {
   .sticky {
     justify-content: space-between;
     padding: 10px 20px;
+    margin-bottom: 0px;
   }
 }
 
@@ -131,9 +131,8 @@ header .nav_lenker li a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0px 20px;
-  max-width: 1000px;
-  margin: 0px auto;
+  padding: 0px max(20px, (100% - 1000px) / 2);
+  background-color: #000;
 }
 
 .logo {
@@ -143,6 +142,33 @@ header .nav_lenker li a:hover {
   pointer-events: none;
   width: 15rem;
   color: inherit;
+}
+
+.forside_bilde {
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  margin-top: -126px;
+  height: calc(25vw + 150px);
+  background-image: url(../img/resturant.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  position: fixed;
+}
+
+.overlay {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0, 0, 0));
+  height: calc(25vw + 150px);
+  width: 100%;
+  margin-top: -126px;
 }
 
 #hamburger_knapp {
@@ -292,7 +318,22 @@ footer {
 footer div {
   display: inline-block;
   padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
 }
-footer div li {
+footer div ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-grow: 1;
+}
+footer div ul li {
   list-style: none;
+  padding: 5px 0px;
+}
+footer div ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0px;
 }

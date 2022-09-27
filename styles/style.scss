@@ -5,11 +5,16 @@
 }
 
 html, body {
-    background-color: #000;
+    // background-color: #000;
     color: #f1f1f1;
     font-family: "Circular pro book", sans-serif;
     height: 3000px;
 }
+// body {
+//     background-image: url(../img/resturant.jpg);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+// }
 
 $small: 600px;
 $medium: 799.5px;
@@ -71,6 +76,7 @@ header {
     @media screen and (max-width: $medium) {
         justify-content: space-between;
         padding: 10px 20px;
+        margin-bottom: 0px;
     }
 }
 
@@ -129,9 +135,10 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0px 20px;
-    max-width: 1000px;
-    margin: 0px auto;
+    padding: 0px max(20px, calc((100% - 1000px) / 2));
+    // max-width: 1000px;
+    // margin: 0px auto;
+    background-color: #000;
 }
 
 .logo {
@@ -141,6 +148,35 @@ header {
     pointer-events: none;
     width: 15rem;
     color: inherit;
+}
+
+.forside_bilde {
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    // top: 0px;
+    margin-top: -126px;
+    height: calc(100vw / 4 + 150px);
+    // z-index: -1;
+    background-image: url(../img/resturant.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    position: fixed;
+}
+
+.overlay {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+    height: calc(100vw / 4 + 150px);
+    width: 100%;
+    margin-top: -126px;
 }
 
 #hamburger_knapp {
@@ -286,8 +322,24 @@ footer {
     div {
         display: inline-block;
         padding: 10px 20px;
-        li {
-            list-style: none;
+        display: flex;
+        flex-direction: column;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            flex-grow: 1;
+            li {
+                list-style: none;
+                padding: 5px 0px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 0px;
+                }
+            }
         }
+        
     }
 }
