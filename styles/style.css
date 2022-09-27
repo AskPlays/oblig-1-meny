@@ -156,7 +156,7 @@ header .nav_lenker li a:hover {
   background-position: center;
 }
 
-.bg {
+.bakgrunn {
   background-color: #000;
   width: 100%;
   height: 100%;
@@ -164,7 +164,7 @@ header .nav_lenker li a:hover {
   position: fixed;
 }
 
-.overlay {
+.skygge {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(0, 0, 0));
   height: calc(25vw + 150px);
   width: 100%;
