@@ -169,6 +169,22 @@ header .nav_lenker li a:hover {
   height: calc(25vw + 150px);
   width: 100%;
   margin-top: -126px;
+  place-content: center;
+  display: flex;
+  align-items: center;
+}
+.skygge h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  font-family: "Ms Madi", cursive;
+  text-align: center;
+  margin-top: 100px;
+  padding: 0px 20px;
+}
+@media screen and (max-width: 799.5px) {
+  .skygge h1 {
+    font-size: 3rem;
+  }
 }
 
 #hamburger_knapp {
