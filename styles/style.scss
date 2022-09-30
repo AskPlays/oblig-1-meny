@@ -261,6 +261,7 @@ button {
         justify-content: space-between;
         img {
             max-height: 200px;
+            object-fit: contain;
         }
         @media screen and (max-width: $small) {
             flex-direction: column;
