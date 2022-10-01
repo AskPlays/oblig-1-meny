@@ -36,6 +36,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 20px;
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   transition: all 0.2s ease;
@@ -259,7 +260,8 @@ button:hover {
 }
 .retter li img {
   max-height: 200px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 600px) {
   .retter li {
@@ -323,6 +325,7 @@ footer {
   font-family: "Circular pro book", sans-serif;
   justify-content: space-evenly;
   padding: 20px 20px;
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   transition: all 0.2s ease;
@@ -355,4 +358,4 @@ footer div ul li a {
   align-items: center;
   gap: 8px;
   padding: 0px;
-}
+}/*# sourceMappingURL=style.css.map */
